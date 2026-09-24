@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pandora Comunicación – Asuntos Públicos</title>
+  <meta name="description" content="Comunicación estratégica e imagen pública para figuras de alta visibilidad y organizaciones.">
+  <link rel="icon" href="assets/favicon.png">
+
+  <!-- Archivo: grotesca con eje de ancho, lo más cercano en Google Fonts a Acumin (la fuente de marca).
+       Si tenés el kit de Adobe, reemplazá este link y cambiá --font en css/styles.css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#" class="site-header__logo" aria-label="Pandora Comunicación, inicio">
+      <img src="assets/pandora-logo.png" alt="Pandora Comunicación" width="1024" height="188">
+    </a>
+    <nav class="site-nav" aria-label="Secciones">
+      <a href="#quienes-somos">Quiénes somos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto" class="site-nav__cta">Contactanos</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Comunicación estratégica e imagen pública</h1>
+        <p class="hero__text">
+          Acompañamos a figuras de alta visibilidad y organizaciones en la consolidación de una imagen confiable y estratégicamente posicionada.
+        </p>
+        <a href="#contacto" class="btn btn--olive">Contactanos</a>
+      </div>
+
+      <!-- Isotipo de la marca en SVG: se ve nítido a cualquier tamaño -->
+      <svg class="hero__mark" viewBox="0 0 188 188" aria-hidden="true" focusable="false">
+        <circle class="mark__disc" cx="94" cy="94" r="93"/>
+        <polygon class="mark__stem" points="62,42 117,42 92,142 62,142"/>
+        <circle class="mark__dot" cx="108.5" cy="83.5" r="32.5"/>
+      </svg>
+    </section>
+
+    <!-- QUIÉNES SOMOS -->
+    <section class="about" id="quienes-somos">
+      <div class="container about__grid">
+        <div class="about__lead">
+          <h2 class="section-title">Quiénes somos</h2>
+          <p class="about__statement">
+            Somos una agencia de comunicación liderada por Jorge Grecco, exsecretario de Comunicación de la Presidencia durante la gestión de Cambiemos (2015 – 2019) y actual gerente de Pandora Comunicación.
+          </p>
+        </div>
+
+        <div class="about__body">
+          <h3 class="about__subtitle">Trayectoria</h3>
+          <ul class="track">
+            <li>Asesor del Gobierno de la Ciudad de Buenos Aires</li>
+            <li>Vicepresidente y gerente general de Edelap</li>
+            <li>Miembro del directorio de Edenor</li>
+            <li>Cargos en diferentes medios de comunicación</li>
+          </ul>
+          <p class="about__text">
+            Aportamos visión estratégica y capacidad de ejecución para transformar desafíos en oportunidades de posicionamiento y crecimiento.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services" id="servicios">
+      <div class="container">
+        <div class="services__header">
+          <h2 class="section-title">Qué hacemos</h2>
+          <p class="services__intro">
+            Desarrollamos estrategias con visión innovadora e implementamos soluciones efectivas orientadas a resultados concretos. Aseguramos que los proyectos se alineen con los objetivos institucionales y las necesidades estratégicas de cada organización, transformando desafíos en oportunidades de valor y generando un impacto sostenible que marca la diferencia.
+          </p>
+        </div>
+
+        <dl class="services__list">
+          <div class="service">
+            <dt class="service__title">Asesoramiento 360</dt>
+            <dd class="service__text">Evaluación integral de marcas, organizaciones y figuras públicas mediante análisis cuantitativos y cualitativos que permiten identificar fortalezas, riesgos y oportunidades de posicionamiento basados en diagnósticos integrales.</dd>
+          </div>
+          <div class="service">
+            <dt class="service__title">Estrategia y posicionamiento</dt>
+            <dd class="service__text">Desarrollo de planes de acción personalizados para fortalecer el posicionamiento institucional, impulsar el crecimiento y acompañar la toma de decisiones estratégicas.</dd>
+          </div>
+          <div class="service">
+            <dt class="service__title">Social listening</dt>
+            <dd class="service__text">Monitoreo y análisis de conversaciones, percepciones y tendencias para anticipar escenarios y generar respuestas estratégicas oportunas.</dd>
+          </div>
+          <div class="service">
+            <dt class="service__title">Gestión de crisis</dt>
+            <dd class="service__text">Diseño de estrategias preventivas y de respuesta orientadas a la mitigación de riesgos, la protección reputacional y la reconstrucción de la confianza pública y de imagen.</dd>
+          </div>
+          <div class="service">
+            <dt class="service__title">Networking</dt>
+            <dd class="service__text">Construcción de vínculos, articulación de alianzas y generación de conexiones que potencian la visibilidad, la influencia y el desarrollo institucional.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+      <div class="container contact__grid">
+        <div class="contact__intro">
+          <h2 class="section-title section-title--light">Hablemos</h2>
+          <p class="contact__text">Contanos en qué podemos ayudarte y te respondemos a la brevedad.</p>
+          <address class="contact__data">
+            <!-- Ojo: el mailto y el texto visible son direcciones distintas (igual que en el original) -->
+            <a href="mailto:pc.pandoracomunicaciones@gmail.com">contacto@pandorapr.com.ar</a>
+            <span>Av. Del Libertador 3728, piso 10, CABA</span>
+          </address>
+        </div>
+
+        <!-- Configurá el destino en action (Formspree, Getform, tu backend) -->
+        <form class="contact__form" id="contact-form" action="" method="post" novalidate>
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Tu nombre completo">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="tuemail@ejemplo.com" required>
+          </div>
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Contanos en qué podemos ayudarte"></textarea>
+          </div>
+          <button type="submit" class="btn btn--olive btn--block">Enviar mensaje</button>
+          <p class="contact__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="assets/pandora-logo.png" alt="Pandora Comunicación" width="1024" height="188" class="footer__logo">
+      <p class="footer__legal">© <span id="year">2026</span> Pandora Comunicación</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

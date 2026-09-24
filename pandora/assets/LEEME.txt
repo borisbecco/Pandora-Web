@@ -1,0 +1,2 @@
+Logo, favicon y fotos del hero ya están incluidos.
+hero.jpg (1920x910) se usa en desktop; hero-mobile.jpg es un recorte de la zona de la laptop para tablet y mobile.

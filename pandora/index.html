@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agencia Pandora – Asuntos Públicos</title>
+
+  <link rel="icon" href="assets/favicon.png">
+
+  <!-- La fuente de marca es Acumin Variable Concept (Adobe Fonts).
+       Si tenés el kit, agregá acá: <link rel="stylesheet" href="https://use.typekit.net/TU-KIT-ID.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER (sticky) -->
+  <header class="site-header">
+    <a href="#" class="site-header__logo">
+      <img src="assets/pandora-logo.png" alt="Pandora" width="800" height="147">
+    </a>
+    <a href="#contacto" class="btn btn--olive site-header__cta">CONTACTANOS</a>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Bienvenido a Pandora</p>
+        <h1 class="hero__title">Comunicación <span>estratégica</span> e imágen pública</h1>
+        <p class="hero__text">
+          Acompañamos a figuras de alta visibilidad y organizaciones en la consolidación de una imagen confiable y estratégicamente posicionada.
+        </p>
+      </div>
+      <!-- En el sitio original el fondo se asigna desde Elementor. Poné la imagen en assets/ y seteala en --hero-image (css/styles.css) -->
+      <div class="hero__media"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="about__inner">
+        <p class="eyebrow">About us</p>
+        <h2 class="section-title">Quiénes somos</h2>
+        <p class="about__text">
+          Somos una agencia de comunicación liderada por Jorge Grecco, exsecretario de Comunicación de la Presidencia durante la gestión de Cambiemos (2015 – 2019) y actual gerente de Pandora Comunicación. Con trayectoria como asesor del Gobierno de la Ciudad de Buenos Aires, vicepresidente y gerente general de Edelap, y miembro del directorio de Edenor, además de ocupar cargos en diferentes medios de comunicación. Aportamos visión estratégica y capacidad de ejecución para transformar desafíos en oportunidades de posicionamiento y crecimiento.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services">
+      <div class="services__header">
+        <p class="eyebrow">Servicios</p>
+        <h2 class="section-title">Qué hacemos</h2>
+        <p class="services__intro">
+          Desarrollamos estrategias con visión innovadora e implementamos soluciones efectivas orientadas a resultados concretos. Aseguramos que los proyectos se alineen con los objetivos institucionales y las necesidades estratégicas de cada organización, transformando desafíos en oportunidades de valor y generando un impacto sostenible que marca la diferencia.
+        </p>
+      </div>
+
+      <div class="services__grid">
+        <article class="service-card">
+          <span class="service-card__bar"></span>
+          <h3 class="service-card__title">Asesoramiento 360</h3>
+          <p class="service-card__text">Evaluación integral de marcas, organizaciones y figuras públicas mediante análisis cuantitativos y cualitativos que permiten identificar fortalezas, riesgos y oportunidades de posicionamiento basados en diagnósticos integrales.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-card__bar"></span>
+          <h3 class="service-card__title">Estrategia y Posicionamiento</h3>
+          <p class="service-card__text">Desarrollo de planes de acción personalizados para fortalecer el posicionamiento institucional, impulsar el crecimiento y acompañar la toma de decisiones estratégicas.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-card__bar"></span>
+          <h3 class="service-card__title">Social Listening</h3>
+          <p class="service-card__text">Monitoreo y análisis de conversaciones, percepciones y tendencias para anticipar escenarios y generar respuestas estratégicas oportunas.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-card__bar"></span>
+          <h3 class="service-card__title">Gestión de Crisis</h3>
+          <p class="service-card__text">Diseño de estrategias preventivas y de respuesta orientadas a la mitigación de riesgos, la protección reputacional y la reconstrucción de la confianza pública y de imagen.</p>
+        </article>
+        <article class="service-card service-card--offset">
+          <span class="service-card__bar"></span>
+          <h3 class="service-card__title">Networking</h3>
+          <p class="service-card__text">Construcción de vínculos, articulación de alianzas y generación de conexiones que potencian la visibilidad, la influencia y el desarrollo institucional.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+      <div class="contact__inner">
+        <img class="contact__logo" src="assets/pandora-logo.png" alt="Pandora" width="800" height="147">
+
+        <!-- En WordPress lo procesaba Elementor. En estático necesitás un servicio
+             (Formspree, Getform, Netlify Forms) o tu propio backend: poné la URL en action. -->
+        <form class="contact__form" id="contact-form" action="" method="post" novalidate>
+          <div class="field">
+            <label for="name">NOMBRE</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre completo">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+          </div>
+          <div class="field">
+            <label for="message">MENSAJE</label>
+            <textarea id="message" name="message" rows="4" placeholder="Contanos en qué podemos ayudarte"></textarea>
+          </div>
+          <button type="submit" class="btn btn--submit">
+            <svg aria-hidden="true" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+            <span>ENVIAR</span>
+          </button>
+          <p class="contact__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <ul class="footer__list">
+        <!-- Ojo: el mailto y el texto visible son direcciones distintas (igual que en el original) -->
+        <li><a href="mailto:pc.pandoracomunicaciones@gmail.com">contacto@pandorapr.com.ar</a></li>
+        <li>Av. Del Libertador 3728 P.10 (CABA)</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
