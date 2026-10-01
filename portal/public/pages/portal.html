@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>SBASE · Pandora Comunicación</title>
+  <link rel="icon" href="/portal-assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/portal-assets/css/tokens.css">
+  <link rel="stylesheet" href="/portal-assets/css/portal.css">
+</head>
+<body>
+  <!-- Provisorio (etapa 1): solo confirma la sesión y el rol. Se reemplaza en la etapa 2. -->
+  <header class="shell__hdr">
+    <div class="shell__bar">
+      <a href="/" class="shell__logo" aria-label="Pandora Comunicación, inicio"><img src="/portal-assets/img/pandora-logo.png" alt="Pandora Comunicación" width="1024" height="188"></a>
+      <div class="shell__actions">
+        <span data-user-name></span>
+        <a href="/admin/" class="btn btn--outline" data-admin-only hidden>Panel de administración</a>
+        <button type="button" class="shell__link" data-logout>Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+  <main class="shell__main">
+    <p class="shell__eyebrow">Portal de clientes</p>
+    <h1 class="shell__title">Sesión iniciada</h1>
+    <p class="shell__text">El portal (Inicio, Actualizaciones y Detalle) se construye en la etapa 2.</p>
+  </main>
+  <script src="/portal-assets/js/session.js"></script>
+</body>
+</html>

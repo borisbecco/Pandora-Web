@@ -1,0 +1,113 @@
+/* fonts.css */
+/* Brand font Acumin Variable Concept (Adobe) replaced by Archivo — closest Google match, width axis 62–125. Inter kept for the legacy look. */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* colors.css */
+:root{
+--navy:#11243f;
+--navy-deep:#0b1829;
+--olive:#787f5c;
+--olive-dark:#666d4d;
+--olive-dark-legacy:#667354;
+--olive-light:#b9bd9f;
+--olive-pale:#c5cba8;
+--grey:#ededed;
+--hero-paper:#f7f7f5;
+--white:#ffffff;
+--muted:#4a5568;
+--error-soft:#f2b8b5;
+
+--ink:var(--navy);
+--text-body:var(--navy);
+--text-muted:var(--muted);
+--text-accent:var(--olive);
+--text-on-navy:rgba(255,255,255,0.72);
+--text-on-navy-legacy:rgba(255,255,255,0.75);
+--text-on-navy-faint:rgba(255,255,255,0.5);
+--placeholder-on-navy:rgba(255,255,255,0.38);
+
+--surface-page:var(--white);
+--surface-alt:var(--grey);
+--surface-card:var(--grey);
+--surface-inverse:var(--navy);
+--surface-inverse-deep:var(--navy-deep);
+--surface-field-on-navy:rgba(255,255,255,0.05);
+--surface-field-on-navy-focus:rgba(255,255,255,0.09);
+
+--line:rgba(17,36,63,0.14);
+--line-light:rgba(255,255,255,0.14);
+--line-field-on-navy:rgba(255,255,255,0.2);
+--line-strong:var(--navy);
+
+--action-bg:var(--olive);
+--action-bg-hover:var(--olive-dark);
+--action-fg:var(--white);
+--focus-ring:var(--olive-light);
+--status-ok:var(--olive-light);
+--status-error:var(--error-soft);
+}
+
+/* typography.css */
+:root{
+--font:'Archivo',-apple-system,BlinkMacSystemFont,sans-serif;
+--font-legacy:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+
+--stretch-hero:72%;
+--stretch-title:78%;
+--stretch-service:80%;
+
+--fs-hero:clamp(3rem,8.4vw,7.5rem);
+--fs-section-title:clamp(2.25rem,4.2vw,3.75rem);
+--fs-service-title:clamp(1.5rem,2.4vw,2.1rem);
+--fs-statement:clamp(1.35rem,2.1vw,1.75rem);
+--fs-lead:clamp(1.05rem,1.4vw,1.25rem);
+--fs-body:1.0625rem;
+--fs-button:1rem;
+--fs-nav:0.95rem;
+--fs-label:0.9rem;
+--fs-small:0.875rem;
+
+--lh-hero:0.95;
+--lh-title:1;
+--lh-service:1.1;
+--lh-statement:1.4;
+--lh-body:1.6;
+
+--ls-hero:-0.02em;
+--ls-title:-0.015em;
+
+/* legacy (original site) — uppercase, heavy */
+--fs-legacy-hero:clamp(2.2rem,3.6vw,3.6rem);
+--fs-legacy-title:clamp(1.9rem,3vw,2.8rem);
+--fs-legacy-eyebrow:0.85rem;
+--ls-legacy-eyebrow:0.12em;
+--ls-legacy-button:0.08em;
+}
+
+/* layout.css */
+:root{
+--header-h:76px;
+--header-h-mobile:64px;
+--header-h-legacy:80px;
+--gutter:clamp(1.25rem,6vw,5rem);
+--gutter-legacy:6vw;
+--max:1240px;
+--max-legacy-grid:1200px;
+--section-pad:clamp(5rem,11vw,9rem);
+--section-pad-legacy:clamp(4rem,8vw,7rem);
+
+--radius-pill:100px;
+--radius-card:16px;
+--radius-field:10px;
+--radius-bar:2px;
+
+--shadow-header-legacy:0 4px 16px rgba(0,0,0,0.25);
+--shadow-header:0 1px 0 var(--line-light);
+--shadow-card-hover:0 16px 32px rgba(17,36,63,0.12);
+
+--ease:ease;
+--ease-mark:cubic-bezier(0.2,0.8,0.2,1);
+--dur-fast:0.2s;
+--dur-base:0.25s;
+}
+

@@ -1,0 +1,88 @@
+/* Portal de clientes y CMS — Pandora Comunicación
+   Tokens: tokens.css (copia de pandora-opcion-a/css/tokens.css).
+   La base (reset, .btn, .field) replica la del sitio público para unificarlos después. */
+
+/* ---------- Base compartida ---------- */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font);font-size:var(--fs-body);line-height:1.6;color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--olive-light);outline-offset:3px}
+[hidden]{display:none!important}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;width:fit-content;font:inherit;font-size:1rem;font-weight:600;background:var(--olive);color:var(--white);border:none;border-radius:var(--radius-pill);padding:.95rem 1.9rem;cursor:pointer;transition:background .2s ease;white-space:nowrap}
+.btn:hover{background:var(--olive-dark)}
+.btn:disabled{opacity:.6;cursor:wait}
+.btn--block{width:100%}
+.btn--outline{background:transparent;border:1px solid var(--olive);padding:.55rem 1.25rem;font-size:.95rem;font-weight:500}
+.btn--outline:hover{background:var(--olive)}
+
+.field{display:flex;flex-direction:column;gap:.45rem}
+.field label{font-size:.9rem;font-weight:600;color:var(--text-on-navy)}
+.field input{font:inherit;font-size:1rem;color:var(--white);background:var(--surface-field-on-navy);border:1px solid var(--line-field-on-navy);border-radius:var(--radius-field);padding:.9rem 1.1rem;outline:none;transition:border-color .2s ease,background .2s ease}
+.field input::placeholder{color:var(--placeholder-on-navy)}
+.field input:focus{border-color:var(--olive-light);background:var(--surface-field-on-navy-focus)}
+.field.has-error input{border-color:var(--error-soft)}
+/* Controles con line-height normal, como en la referencia (el body va a 1.6 para el texto corrido).
+   Va después de .btn y .field porque "font:inherit" también resetea el line-height. */
+.btn,.field label,.field input{line-height:normal}
+
+/* Isotipo sobre navy (HeroMark del design system) */
+.mk-disc{fill:rgba(255,255,255,.045)}
+.mk-stem{fill:var(--navy-deep)}
+.mk-dot{fill:var(--olive);transform-box:fill-box;transform-origin:center;animation:dot-in 1.1s var(--ease-mark) .2s both}
+@keyframes dot-in{from{transform:scale(.2);opacity:0}to{transform:scale(1);opacity:1}}
+
+/* ---------- Login (y páginas de error, que usan el mismo marco) ---------- */
+.lg{position:relative;overflow:hidden;min-height:100vh;display:flex;flex-direction:column;background:var(--navy);color:var(--white)}
+.lg__mark{position:absolute;right:-12vw;top:50%;width:min(64vw,880px);height:auto;transform:translateY(-50%);pointer-events:none}
+.lg__bar{position:relative;width:100%;max-width:var(--max);height:var(--header-h);margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between}
+.lg__logo img{width:190px;height:auto}
+.lg__back{font-size:15px;color:var(--text-on-navy);transition:color .2s ease}
+.lg__back:hover{color:var(--white)}
+.lg__main{position:relative;flex:1;width:100%;max-width:var(--max);margin:0 auto;padding:64px 40px 96px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:64px;align-items:center}
+.lg__eyebrow{font-size:15px;color:var(--olive-light);margin-bottom:20px}
+.lg__title{font-size:clamp(3rem,6.4vw,6rem);font-weight:700;font-stretch:72%;line-height:.95;letter-spacing:-.02em;margin-bottom:28px;text-wrap:balance}
+.lg__lead{font-size:clamp(1.05rem,1.4vw,1.25rem);line-height:1.6;color:var(--text-on-navy);max-width:520px}
+.lg__lead a{color:var(--white);text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:.25em}
+
+.lg__panel{justify-self:end;width:100%;max-width:460px;display:flex;flex-direction:column;gap:22px;padding:40px;background:var(--navy-deep);border:1px solid var(--line-light)}
+.lg__error{font-size:14px;color:var(--error-soft)}
+.lg__hint{font-size:13px;line-height:1.5;color:var(--text-on-navy-faint)}
+
+/* Selector segmentado Cliente / Administrador */
+.seg{display:grid;grid-template-columns:1fr 1fr;min-width:0;padding:4px;border:1px solid var(--line-field-on-navy);border-radius:var(--radius-pill)}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:block;line-height:normal;padding:10px;border-radius:var(--radius-pill);text-align:center;font-size:15px;font-weight:500;color:var(--text-on-navy);cursor:pointer;transition:background .2s ease,color .2s ease}
+.seg span:hover{color:var(--white)}
+.seg input:checked+span{background:var(--olive);color:var(--white)}
+.seg input:focus-visible+span{outline:2px solid var(--olive-light);outline-offset:3px}
+
+/* ---------- Marco provisorio de portal y CMS (se reemplaza en las etapas 2 y 3) ---------- */
+.shell__hdr{position:sticky;top:0;z-index:50;background:var(--navy);color:var(--white)}
+.shell__bar{max-width:var(--max);height:var(--header-h);margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.shell__logo img{width:150px;height:auto}
+.shell__actions{display:flex;align-items:center;gap:20px;font-size:15px;color:var(--text-on-navy)}
+.shell__link{background:none;border:0;font:inherit;color:var(--text-on-navy);cursor:pointer;transition:color .2s ease}
+.shell__link:hover{color:var(--white)}
+.shell__main{max-width:var(--max);margin:0 auto;padding:80px 40px 104px}
+.shell__eyebrow{font-size:14px;color:var(--olive-dark);margin-bottom:16px}
+.shell__title{font-size:var(--fs-section-title);font-weight:700;font-stretch:78%;line-height:1;letter-spacing:-.015em;margin-bottom:20px}
+.shell__text{color:var(--muted);max-width:60ch}
+
+@media (max-width:1024px){
+  .lg__main{grid-template-columns:1fr;gap:48px}
+  .lg__panel{justify-self:stretch;max-width:none}
+}
+@media (max-width:720px){
+  :root{--header-h:64px}
+  .lg__bar,.shell__bar{padding:0 20px}
+  .lg__logo img{width:150px}
+  .lg__back{display:none}
+  .lg__main{padding:40px 20px 64px}
+  .lg__panel{padding:28px 24px}
+  .lg__mark{right:-40vw;width:110vw}
+  .shell__main{padding:56px 20px 72px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
