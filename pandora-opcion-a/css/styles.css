@@ -37,6 +37,9 @@ img,svg{display:block;max-width:100%}
 .ftr .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
 .ftr img{width:140px;height:auto;opacity:.85}
 .ftr p{color:var(--text-on-navy-faint);font-size:.875rem}
+.ftr__meta{display:flex;align-items:center;gap:2rem;flex-wrap:wrap}
+.ftr__link{color:var(--text-on-navy);font-size:.875rem;font-weight:500;transition:color .2s ease}
+.ftr__link:hover{color:var(--white)}
 .mk-dotg{transform-box:fill-box;transform-origin:center}
 .mk-dot{transform-box:fill-box;transform-origin:center}
 .intro .mk-dot{animation:dot-in 1.4s var(--ease-mark) .5s both}
